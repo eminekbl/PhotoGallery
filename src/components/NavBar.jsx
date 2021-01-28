@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Form, Button, FormControl } from "react-bootstrap";
-import { Link,useHistory } from "react-router-dom";
-import { MdLooks } from 'react-icons/md';
+import { Link, useHistory } from "react-router-dom";
+import { MdLooks } from "react-icons/md";
 
 function NavBar(props) {
   let history = useHistory();
@@ -14,24 +14,24 @@ function NavBar(props) {
       </Nav.Link>
     ));
 
-    function handleSubmit(props){
-      console.log(value)
-      setValue(value.toLowerCase())
-      history.push(`/search/${value}`);
-    }
+  function handleSubmit(event) {
+    console.log(`/search/${value}`);
+    setValue(value.toLowerCase());
+    history.push(`/search/${value}`);
+  }
 
   return (
     <div>
       <Navbar className="navbar" variant="dark">
-        <Navbar.Brand as={Link} to="/" >
-          <MdLooks size='2em'/>
+        <Navbar.Brand as={Link} to="/">
+          <MdLooks size="2em" />
           {` PhotoGallery`}
         </Navbar.Brand>
         <Nav className="mr-auto">{linkItems}</Nav>
         <Form inline onSubmit={handleSubmit}>
           <FormControl
             className="mr-sm-2"
-            type="search"
+            // type="search"
             placeholder="Search Photos"
             aria-label="Search"
             value={value}
@@ -39,16 +39,11 @@ function NavBar(props) {
               setValue(event.target.value);
             }}
           />
-          <Button
-            variant="outline-light"
-            
-            type="submit"
-          >
+          <Button variant="outline-light" type="submit">
             Search
           </Button>
         </Form>
       </Navbar>
-
     </div>
   );
 }
