@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
-import FetchImage from '../FetchImage'
+import FetchImage from './FetchImage'
 
 function Search(props) {
     

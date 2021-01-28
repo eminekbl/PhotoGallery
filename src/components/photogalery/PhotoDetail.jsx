@@ -62,7 +62,6 @@ function PhotoDetail(props) {
 
                 </Col>
             </Row>
-
             <a id="license" href="https://unsplash.com/license">
                 Read More About Unsplash License
       </a>
