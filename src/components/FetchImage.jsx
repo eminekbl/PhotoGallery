@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import PhotoCard from "./photogalery/PhotoCard";
 import { Container } from "react-bootstrap";
-import apiKey from "../data/unsplashApiKey";
+import apiKey from "../api/unsplashApiKey";
 function FetchImage(props) {
   const [images, setImages] = React.useState([]);
 

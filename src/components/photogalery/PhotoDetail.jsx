@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import apiKey from "../../data/unsplashApiKey";
+import apiKey from "../../api/unsplashApiKey";
 import './PhotoCard.css'
 
 function PhotoDetail(props) {
     const params = useParams();
     const { photoID } = params;
-
     const [details, setDetails] = React.useState({});
 
     useEffect(() => {
