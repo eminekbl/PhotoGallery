@@ -19,7 +19,7 @@ function PhotoGallery(props) {
       <Container className='mt-5'>
         <Row>
           {categories.map((item, index) => (
-            <Col sm={6} key={index} className='mb-3'>
+            <Col id='cardColumns' md={6} key={index} className='mb-3'>
               <Card id="card" className="bg-dark text-white" as={Link} to={`/search/${item.title}`}>
                 <Card.Img id="cardImg" src={item.url} alt="Card image" />
                 <Card.ImgOverlay className="overlay">

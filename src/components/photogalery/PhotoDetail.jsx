@@ -54,7 +54,7 @@ function PhotoDetail(props) {
                     <a href={details.full}>
                         <img
                             className="img-fill"
-                            id={details.id}
+                            id="detailImg"
                             src={details.url}
                             alt=""
                         />

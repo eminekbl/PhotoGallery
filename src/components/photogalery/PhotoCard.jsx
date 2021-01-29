@@ -16,13 +16,13 @@ function PhotoCard(props) {
         <Row>
           {props.images.map((image, index) => {
             return (
-              <Col sm={6} className="mt-3 ms-1">
+              <Col id='cardColumns' md={6} className="mt-3">
                 <Card id="card">
                   <Card.Img
                     key={index}
                     id="cardImg"
                     src={`https://source.unsplash.com/${image.id}/600x500`}
-                    alt="Not Found!!"
+                    alt=""
                   />
                   <Card.Body>
                     <div className="overlay"></div>
