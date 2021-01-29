@@ -13,11 +13,11 @@ function FetchImage(props) {
       .then((data) => {
         setImages(data.results);
         console.log(`images:: ${data.results}`);
-        console.log(props.value);
+        console.log(images);
       });
   }, []);
   return (
-    <Container>{props.value ? <PhotoCard images={images} /> : ""}</Container>
+    <Container>{<PhotoCard images={images} /> }</Container>
   );
 }
 

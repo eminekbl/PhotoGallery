@@ -29,7 +29,7 @@ function PhotoDetail(props) {
     return (
         <Container className="mt-3" >
             <Row>
-                <Col sm={3} id='block'>
+                <Col md={3} id='block'>
                     <p id="bold">Phorographer:</p>
                     <h4 id="bold">{details.user}</h4>
                     {details.location ? <h5>{`From: ${details.location}`}</h5> : ""}
@@ -50,7 +50,7 @@ function PhotoDetail(props) {
                             ""
                         )}
                 </Col>
-                <Col sm={9}>
+                <Col md={9}>
                     <a href={details.full}>
                         <img
                             className="img-fill"
