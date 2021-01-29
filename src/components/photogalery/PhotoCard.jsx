@@ -5,13 +5,12 @@ import "./PhotoCard.css";
 
 function PhotoCard(props) {
   let history = useHistory();
-
-
   function handleClick(event) {
     history.push(`/search/detail/${event}`);
   }
   return (
     <Router>
+     { props.images.length > 0 ?  
       <Container>
         <Row>
           {props.images.map((image, index) => {
@@ -43,6 +42,16 @@ function PhotoCard(props) {
           })}
         </Row>
       </Container>
+      :
+              <Container className='mt-4'>
+              <Row className="justify-content-center">
+                  <Col sm={5} id='block'>
+                  <h4>Sorry, no images matching your search were found.</h4>
+                  </Col>
+              </Row>
+              
+          </Container>
+      }
     </Router>
   );
 }

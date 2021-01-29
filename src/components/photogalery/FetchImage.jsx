@@ -17,7 +17,7 @@ function FetchImage(props) {
       });
   }, []);
   return (
-    <Container>{<PhotoCard images={images} /> }</Container>
+    <Container>{ <PhotoCard images={images} /> }</Container>
   );
 }
 
