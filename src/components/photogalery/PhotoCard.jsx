@@ -15,7 +15,7 @@ function PhotoCard(props) {
         <Row>
           {props.images.map((image, index) => {
             return (
-              <Col id='cardColumns' md={6} className="mt-3">
+              <Col key={index} id='cardColumns' md={6} className="mt-3">
                 <Card id="card">
                   <Card.Img
                     key={index}

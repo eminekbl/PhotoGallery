@@ -53,8 +53,8 @@ function PhotoDetail(props) {
                 <Col md={9}>
                     <a href={details.full}>
                         <img
-                            className="img-fill"
-                            id="detailImg"
+                            className=""
+                            id='detailImg'
                             src={details.url}
                             alt=""
                         />
