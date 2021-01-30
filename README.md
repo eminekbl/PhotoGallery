@@ -1,4 +1,4 @@
-# PhotoGallery | Free Stock Images From Unsplahs
+# PhotoGallery | Free Stock Images From Unsplash
 ![PhotoGallery](https://github.com/eminekbl/PhotoGallery/blob/master/readme_image/PhotoGaleryScreen.png?raw=true)
 <hr/>
 
