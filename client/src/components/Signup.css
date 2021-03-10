@@ -1,0 +1,25 @@
+.submit-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.submit-button {
+  width: 100%;
+}
+.signup-title {
+  margin-top: -5rem;
+}
+.submit-form {
+  width: 50%;
+  padding: 5rem;
+  justify-content: center;
+}
+.password-label {
+  width: 100%;
+}
+.forgotpassword {
+  float: right;
+  display: flex;
+}
