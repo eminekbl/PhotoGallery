@@ -1,7 +1,7 @@
 {
   "name": "photogallery",
   "version": "0.1.0",
-  "proxy": "http://localhost:5001",
+  "proxy": "https://ek-photogallery.herokuapp.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
