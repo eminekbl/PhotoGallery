@@ -25,7 +25,7 @@ function Login({ history }) {
     };
     try {
       const { data } = await axios.post(
-        "https://ek-photogallery.herokuapp.com/api/auth/forgotpassword",
+        "/api/auth/forgotpassword",
         { email },
         config
       );

@@ -30,7 +30,7 @@ function ResetPassword() {
 
     try {
       const { data } = await axios.put(
-        `https://ek-photogallery.herokuapp.com//api/auth/resetpassword/${resetToken}`,
+        `/api/auth/resetpassword/${resetToken}`,
         {
           password,
         },
