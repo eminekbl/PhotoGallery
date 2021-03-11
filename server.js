@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === "production") {
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, "client", "build", index.html))
     })
-    router.get('/resetpassword/:resetToken', function (req, res) {
+    app.get('/resetpassword/:resetToken', function (req, res) {
         res.sendFile(path.join(__dirname, "client", "build", index.html))
     });
 
