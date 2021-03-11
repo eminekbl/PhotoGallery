@@ -12,7 +12,10 @@
   margin-top: -5rem;
 }
 .submit-form {
-  width: 50%;
+  /* width: 100%; */
+  width: 90%;
+  max-width: 600px;
+  min-width: 310px;
   padding: 5rem;
   justify-content: center;
 }

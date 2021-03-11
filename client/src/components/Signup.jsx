@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
-import { AuthContext } from "../context/AuthContext";
 import "./Signup.css";
 function Login({ history }) {
-  const authContextAPI = React.useContext(AuthContext);
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -52,7 +50,7 @@ function Login({ history }) {
       <Form className="submit-form" onSubmit={handleSignup}>
         <h3 className="text-center submit-title">Signup</h3>
         {error && <span className="error-message">{error}</span>}
-        <Form.Group controlId="formBasicEmail">
+        <Form.Group>
           <Form.Label>Username</Form.Label>
           <Form.Control
             type="text"
@@ -62,7 +60,7 @@ function Login({ history }) {
             onChange={(e) => setUsername(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlId="formBasicEmail">
+        <Form.Group>
           <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
@@ -76,7 +74,7 @@ function Login({ history }) {
           </Form.Text>
         </Form.Group>
 
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group>
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
@@ -86,11 +84,11 @@ function Login({ history }) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group>
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Copnfirm Password"
+            placeholder="Confirm Password"
             value={confirmPassword}
             required
             onChange={(e) => setConfirmPassword(e.target.value)}

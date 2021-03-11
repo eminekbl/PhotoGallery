@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
-import { AuthContext } from "../context/AuthContext";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 
 function Login({ history }) {
-  const authContextAPI = React.useContext(AuthContext);
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
