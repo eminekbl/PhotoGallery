@@ -28,6 +28,7 @@ app.use('/api/private', require('./routers/private'))
 //     })
 // }
 
+app.use('/static', express.static('public'))
 
 
 app.listen(PORT, () => {
