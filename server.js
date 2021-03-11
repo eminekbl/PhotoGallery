@@ -21,15 +21,18 @@ app.use('/api/private', require('./routers/private'))
 //     res.send("HELLO FROM ROOOOT")
 // })
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static('client/build'))
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '/client/public/index.html'))
-    })
+// if (process.env.NODE_ENV === "production") {
+//     app.use(express.static('client/build'))
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.join(__dirname, "client", "build", index.html))
+//     })
 
 
-}
-
+// }
+app.use(express.static(path.join(__dirname, "client", "build")))
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 // app.use('/static', express.static('client/public'))
 // res.sendFile(path.join(__dirname, "client", "build", index.html))
 
