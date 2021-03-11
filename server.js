@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 5001
 
 
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 app.use('/api/auth', require('./routers/auth'))
 app.use('/api/private', require('./routers/private'))
