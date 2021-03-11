@@ -16,9 +16,9 @@ app.use(cors())
 app.use('/api/auth', require('./routers/auth'))
 app.use('/api/private', require('./routers/private'))
 
-app.get('/', (req, res) => {
-    res.send("HELLO FROM ROOOOT")
-})
+// app.get('/', (req, res) => {
+//     res.send("HELLO FROM ROOOOT")
+// })
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static('client/build'))
