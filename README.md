@@ -2,8 +2,8 @@
 ![PhotoGallery](https://github.com/eminekbl/PhotoGallery/blob/master/readme_image/PhotoGaleryScreen.png?raw=true)
 <hr/>
 
-https://nifty-leakey-acd548.netlify.app/
-
+DEMO : https://nifty-leakey-acd548.netlify.app/
+DEMO with Express.js : https://ek-photogallery.herokuapp.com
 
 
 ## ABOUT THIS PROJECT
